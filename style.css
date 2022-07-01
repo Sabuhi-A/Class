@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Section 1 */
+.section-1 {
+    text-align: center;
+    margin-top: 15px;
+}
+:is(.section-1) h4, h2, p, div {
+    margin-bottom: 15px;
+}
+.section-1 h4 {
+    opacity: 0.3;
+}
+.section-1 p {
+    opacity: 0.7;
+}
+.section-1 a:nth-child(2) {
+    margin: 0 30px;
+}
+.section-1 a {
+    text-decoration: none;
+    color: #757575;
+    font-weight: bold;
+}
+.section-1 a:hover {
+    color: #000;
+    border-bottom: 2px solid #1ac200;
+}
+/* Section 2 */
+.section-2 {
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.section-2 .box {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    transition: 0.5s;
+    text-align: center;
+}
+.section-2 .box:hover {
+    box-shadow: 1px 1px 10px;
+    margin-top: -1px;
+}
+.section-2 .box-img {
+    width: 260px;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+}
+.image, .image-2, .image-2-1, .image-chair-2, .image-chair-3, .image-chair-4, .image-clock-2, .image-clock-3,
+.image-stool-3, .image-stool-4, .image-stool-5, .image-arm-chair-3 {
+    width: 100%;
+    height: 100%;
+}
+.image-2, .image-2-1, .image-chair-2, .image-chair-3, .image-chair-4, .image-clock-2, .image-clock-3,
+.image-stool-3, .image-stool-4, .image-stool-5, .image-arm-chair-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.section-2 .box-img:hover .image {
+    display: none;
+}
+.section-2 .box-img:hover .image-2 {
+    display: block;
+}
+.section-2 .box-sale {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: #60e841;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+}
+.section-2 .box-sale-new {
+    background-color: #346b03;
+}
+.section-2 .box-sale-29 {
+    background-color: #6bd674;
+}
+.section-2 .box-sale-50 {
+    background-color: #fc1c1c;
+}
+.section-2 .box-sale-25 {
+    background-color: #45d963;
+}
+.section-2 .box-sale-hot {
+    background-color: #ff1212;
+}
+.section-2 .box-color-change {
+    width: 260px;
+    height: 40px;
+    margin-top: -15px;
+    z-index: 1;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    display: none;
+}
+.section-2 .box:hover .box-color-change {
+    margin-top: -55px;
+    display: block;
+    display: flex;
+    justify-content: flex-start;
+}
+.section-2 .box-color-change .color-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 7px;
+    cursor: pointer;
+}
+.section-2 .box-color-change .color-1 {
+    background-color: #e6803c;
+}
+.section-2 .box-color-change .color-2 {
+    background-color: #000;
+}
+.section-2 .box-color-change .color-3 {
+    background-color: #000;
+}
+.section-2 .box-color-change .color-4 {
+    background-color: #1de2f0;
+}
+.section-2 .box-color-change .color-5 {
+    background-color: #ededed;
+}
+.section-2 .box-color-change .color-6 {
+    background-color: #9be024;
+}
+.section-2 .box-color-change .color-7 {
+    background-color: #000;
+}
+.section-2 .box-color-change .color-8 {
+    background-color: #4bab6e;
+}
+.section-2 .box-color-change .color-9 {
+    background-color: #dbd516;
+}
+.section-2 .box-color-change .color-10 {
+    background-color: #000;
+}
+.section-2 .box-color-change .color-11 {
+    background-color: #2c53f2;
+}
+.section-2 .box-color-change .color-12 {
+    background-color: #a2a5b0;
+}
+.section-2 .box-color-change .color-13 {
+    background-color: #f5d72c;
+}
+.section-2 .box-color-change .color-14 {
+    background-color: #000;
+}
+.section-2 .box-color-change .color-15 {
+    background-color: #c7c7c7;
+}
+:is(.section-2 .box) h4, h5 {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.section-2 .box h4:hover {
+    opacity: 0.5;
+}
+.section-2 .box h5 {
+    opacity: 0.5;
+}
+.section-2 .box h5:hover {
+    opacity: 1;
+}
+.section-2 .box #dollar {
+    color: #5ec404;
+    font-weight: bold;
+}
+.section-2 .box #dollar span {
+    color: #757575;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+.section-2 .box #text {
+    margin: 0 15px;
+    opacity: 0.8;
+}
+.section-2 .box .text-btn {
+    margin-top: 20px;
+}
+.section-2 .box .text-btn button {
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
+    margin: 0 20px;
+    background-color: #04b516;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+.section-2 .box .text-btn button:hover {
+    background-color: #007d0d;
+}
+.section-2 .box .text-btn .fa-solid {
+    font-size: 20px;
+    cursor: pointer;
+}
+.section-2 .box .text-btn .fa-solid:hover {
+    font-size: 25px;
+    transition: 0.1s;
+} 
+.section-2 .text-btn .fa-heart:hover {
+    color: #ff2008;
+}
+.section-2 .text-btn .fa-magnifying-glass:hover {
+    color: #04c918;
+}
+
+.section-2-3 {
+    position: absolute;
+    top: 157px;
+    width: 100%;
+    display: none;
+}
+
+.section-2-4 {
+    position: absolute;
+    top: 157px;
+    width: 100%;
+    display: none;
+}
